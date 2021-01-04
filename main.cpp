@@ -52,7 +52,7 @@ void update(double delta_T, System& system, int step){
     double kinetic = 0.;
     for(int ii = 0; ii < natoms; ii ++){
         for(int jj = 0; jj < 3; jj++){
-            shiftedVelocity[ii][jj] = system.velocities[ii][jj] + static_cast<double>(dforce[ii * 3 +jj]) * 0.5 * delta_T * system.atoms[ii].inverseMass;
+            shiftedVelocity[ii][jj] = system.velocities[ii][jj] + static_cast<double>(dforce[ii * 3 +jj])* forceUnitCoeff * 0.5 * delta_T * system.atoms[ii].inverseMass;
             kinetic +=  system.atoms[ii].mass * shiftedVelocity[ii][jj] * shiftedVelocity[ii][jj];
         }
     }
