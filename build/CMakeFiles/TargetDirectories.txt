@@ -1,3 +1,0 @@
-/home/dingye/Documents/Gitlab/micromd/build/CMakeFiles/rebuild_cache.dir
-/home/dingye/Documents/Gitlab/micromd/build/CMakeFiles/main.dir
-/home/dingye/Documents/Gitlab/micromd/build/CMakeFiles/edit_cache.dir
