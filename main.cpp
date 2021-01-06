@@ -75,7 +75,7 @@ void step(double delta_T, NNPInter nnp_inter, System& system, int step){
 
 
 int main(){
-    string model = "../model/lw_pimd.v1.pb";
+    string model = "../model/lw_pimd.smooth.pb";
     string OP_library  = "/home/dingye/.local/deepmd-kit-1.2.0/lib/libdeepmd_op.so";
     TF_Status* LoadOpStatus = TF_NewStatus();
     TF_LoadLibrary(OP_library.c_str(), LoadOpStatus);
